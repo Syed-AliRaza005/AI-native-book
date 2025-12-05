@@ -24,7 +24,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Syed-AliRaza005',
   projectName: 'AI-native-book', // Usually your repo name.
-  trailingSlash: false,
+  trailingSlash: false,  
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
