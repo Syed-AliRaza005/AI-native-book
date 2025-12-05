@@ -76,7 +76,7 @@ const config: Config = {
           label: 'Textbook',
         },
         {
-          href: 'https://github.com/Syed-AliRaza005/AI-native-book', // Changed from Panaversity/spec-kit-plus
+          href: 'https://github.com/Syed-AliRaza005/AI-native-book', 
           label: 'GitHub',
           position: 'right',
         },
@@ -102,7 +102,7 @@ const config: Config = {
             },
             {
               label: 'Assessments',
-              to: '/docs/assessments',
+              to: '/docs/assessments/introduction',
             },
             
           ],
