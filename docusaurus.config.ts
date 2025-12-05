@@ -25,7 +25,6 @@ const config: Config = {
   organizationName: 'Syed-AliRaza005',
   projectName: 'AI-native-book', // Usually your repo name.
   trailingSlash: false,
-  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
