@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Physical AI & Humanoid Robotics',
-  tagline: 'A Textbook by Syed Ali Raza', // Changed from Panaversity
+  tagline: 'A Textbook by Syed Ali Raza', 
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,16 +15,17 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://syed-ali-raza.github.io', // Changed from Panaversity
+  url: 'https://Syed-AliRaza005.github.io', 
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/AI-native-book/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'syed-ali-raza', // Changed from Panaversity
+  organizationName: 'Syed-AliRaza005',
   projectName: 'AI-native-book', // Usually your repo name.
   trailingSlash: false,
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
@@ -45,8 +46,8 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/syed-ali-raza/AI-native-book/tree/main/', // Changed from Panaversity/spec-kit-plus
-        },
+            'https://github.com/Syed-AliRaza005/AI-native-book'
+                    },
         blog: false, // disabled blog
         theme: {
           customCss: './src/css/custom.css',
@@ -64,7 +65,7 @@ const config: Config = {
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
       logo: {
-        alt: 'Syed Ali Raza Logo', // Changed from Panaversity
+        alt: 'Syed Ali Raza Logo', 
         src: 'img/logo.svg',
       },
       items: [
@@ -75,7 +76,7 @@ const config: Config = {
           label: 'Textbook',
         },
         {
-          href: 'https://github.com/syed-ali-raza/AI-native-book', // Changed from Panaversity/spec-kit-plus
+          href: 'https://github.com/Syed-AliRaza005/AI-native-book', // Changed from Panaversity/spec-kit-plus
           label: 'GitHub',
           position: 'right',
         },
@@ -91,6 +92,19 @@ const config: Config = {
               label: 'Introduction',
               to: '/docs/introduction',
             },
+            {
+              label: 'Learning Outcomes',
+              to: '/docs/learning-outcomes',
+            },
+            {
+              label: 'Hardware Requirements',
+              to: '/docs/hardware-requirements',
+            },
+            {
+              label: 'Assessments',
+              to: '/docs/assessments',
+            },
+            
           ],
         },
         {
@@ -111,16 +125,28 @@ const config: Config = {
           ],
         },
         {
-          title: 'More',
+          title: 'Connect with Me ',
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/syed-ali-raza/AI-native-book', // Changed from Panaversity/spec-kit-plus
+              href: 'https://github.com/Syed-AliRaza005/AI-native-book', 
+            },
+            {
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/in/syed-ali-raza-hassan-6166a02ba/', 
+            },
+            {
+              label: 'Portfolio',
+              href: 'https://portfolio-sarh.vercel.app/', 
+            },
+            {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/_itz_ali_005/', 
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Syed Ali Raza. Built with Docusaurus.`, // Changed from Panaversity
+      copyright: `Copyright © ${new Date().getFullYear()} Syed Ali Raza. Built with Docusaurus.`, 
     },
     prism: {
       theme: prismThemes.github,
