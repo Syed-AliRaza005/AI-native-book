@@ -27,7 +27,7 @@ ROS 2 offers three primary communication mechanisms, each designed for different
 | **Services**            | Synchronous, One-to-One, Bidirectional (Request/Response) | Used for short-duration, blocking operations where a client sends a request and waits for a single response. | Configuration changes (e.g., `set_camera_exposure`), querying current state (e.g., `get_robot_pose`), triggering a single action (e.g., `calibrate_imu`). |
 | **Actions**             | Asynchronous, One-to-One, Bidirectional (Goal/Feedback/Result) | Designed for long-running, interruptible tasks that provide continuous feedback on their progress and a final result. | Navigation to a target location, complex manipulation tasks (e.g., `pick_and_place`), executing a sequence of behaviors. |
 
-`[Diagram: A flowchart illustrating the communication patterns. One path shows a publisher node sending data to multiple subscriber nodes via a topic (1-to-N). Another path shows a client node sending a request to a service server node and waiting for a response (1-to-1 synchronous). A third path shows an action client sending a goal to an action server, receiving periodic feedback, and eventually a result (1-to-1 asynchronous with feedback).]`
+![Diagram: A flowchart illustrating the communication patterns. One path shows a publisher node sending data to multiple subscriber nodes via a topic (1-to-N). Another path shows a client node sending a request to a service server node and waiting for a response (1-to-1 synchronous). A third path shows an action client sending a goal to an action server, receiving periodic feedback, and eventually a result (1-to-1 asynchronous with feedback).](/img/ros2graph.png)
 
 ### Message Definitions: The Language of ROS 2 Data
 

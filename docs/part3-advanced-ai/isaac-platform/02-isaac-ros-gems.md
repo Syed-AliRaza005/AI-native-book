@@ -22,7 +22,6 @@ For applications demanding the absolute lowest latency and highest data throughp
 
 **NITROS (NVIDIA Isaac Transport for ROS)** is a specialized communication layer designed to eliminate this bottleneck.
 
-`[Diagram: A comparison showing two scenarios for inter-node communication. On the left: Two standard ROS 2 nodes in separate processes communicating via DDS (showing data serialization/deserialization, network stack). On the right: Two NITROS-enabled Isaac ROS GEMs (components) loaded into the same Node Container process, communicating via direct shared GPU memory pointers, bypassing DDS.]`
-
+![Diagram: A comparison showing two scenarios for inter-node communication. On the left: Two standard ROS 2 nodes in separate processes communicating via DDS (showing data serialization/deserialization, network stack). On the right: Two NITROS-enabled Isaac ROS GEMs (components) loaded into the same Node Container process, communicating via direct shared GPU memory pointers, bypassing DDS.](/img/isaacros.png)
 *   **Zero-Copy Communication:** When compatible Isaac ROS GEMs (written as ROS 2 components) are loaded into the same **Node Container** process, NITROS enables them to exchange data via shared GPU memory pointers. This means the data is not copied or serialized; instead, one component receives a pointer to the memory location where the data resides on the GPU.
 *   **Intra-Process Efficiency:** This "zero-copy" intra-process communication dramatically reduces latency and CPU overhead, making it possible to build real-time perception and AI pipelines that would otherwise be infeasible. It is an advanced technique for maximizing performance in resource-constrained or high-bandwidth scenarios.

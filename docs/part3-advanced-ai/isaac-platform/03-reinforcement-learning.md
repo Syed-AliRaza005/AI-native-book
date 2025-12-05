@@ -94,7 +94,7 @@ for episode_step in range(max_training_steps):
 gym.destroy_sim(sim)
 ```
 
-**[Diagram: A flowchart illustrating the Isaac Gym RL training loop. Input: policy and environment configurations. A large central box labeled "Isaac Gym Vectorized Simulation (on GPU)" containing many smaller, identical environment instances. Arrows show data flow: (policy) -> actions -> (Isaac Gym) -> observations, rewards, resets -> (policy). This loop is shown repeating rapidly.]**
+![Diagram: A flowchart illustrating the Isaac Gym RL training loop. Input: policy and environment configurations. A large central box labeled "Isaac Gym Vectorized Simulation (on GPU)" containing many smaller, identical environment instances. Arrows show data flow: (policy) -> actions -> (Isaac Gym) -> observations, rewards, resets -> (policy). This loop is shown repeating rapidly.](/img/3rf.png)
 
 This vectorized approach is a game-changer for data-hungry deep reinforcement learning algorithms, significantly reducing the time required for agents to learn highly complex, dynamic skills.
 

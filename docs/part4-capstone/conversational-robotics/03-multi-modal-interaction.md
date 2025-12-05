@@ -36,8 +36,8 @@ This ability to generalize and reason about the *functionality* of objects, rath
 
 ### 3.3 The Grounded Language Imperative
 
-Ultimately, multi-modal interaction is about solving the **grounding problem** (as discussed in the previous chapter) for language in the physical world. A robot that says "I will pick up the cup" must not only refer to the word "cup" but also to a specific physical instance of a cup that it perceives through its sensors.
+Ultimately, multi-modal interaction is about solving the **grounding problem** (as discussed in the previous chapter) for language in the physical world. A robot that says "I will pick up the cup" must not only refer to the word "cup" but also to a specific physical instance of a cup that it perceives through its sensors.mujhmu
+![Diagram: A conceptual diagram showing "Human Language" (text/speech) and "Robot Perception" (camera/LiDAR) as two separate input streams. These streams converge into a "Multi-modal LLM/AI" which then outputs "Grounded Understanding & Action Plan." This plan then connects to "Robot Actuation" (e.g., grasping, navigation). Arrows indicate the fusion of information from both modalities within the AI.](/img/laast.pmg)
 
-**[Diagram: A conceptual diagram showing "Human Language" (text/speech) and "Robot Perception" (camera/LiDAR) as two separate input streams. These streams converge into a "Multi-modal LLM/AI" which then outputs "Grounded Understanding & Action Plan." This plan then connects to "Robot Actuation" (e.g., grasping, navigation). Arrows indicate the fusion of information from both modalities within the AI.]**
 
 This integration allows the robot to answer questions about its environment ("What is this object?", "Where is the red box?"), perform actions based on verbal commands, and even learn new tasks by observing human demonstrations. The future of robotics lies in this seamless blend of language, perception, and physical action, enabling collaborative intelligence at an unprecedented scale.

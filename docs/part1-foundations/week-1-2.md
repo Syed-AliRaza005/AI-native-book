@@ -18,7 +18,7 @@ This line of thinking was later championed by roboticists like Rodney Brooks in 
 
 Today, we understand that both approaches have merit. A robot needs both fast, reactive control (**System 1**) and slow, deliberate planning (**System 2**). The modern study of **Embodied Intelligence** seeks to unify these ideas, recognizing that the physical form of a robot—its morphology, its materials, its sensors, and actuators—is not a bug, but a feature. It is an integral part of the cognitive process.
 
-`[Diagram: A timeline showing the progression from early Cybernetics (Walter's Turtles) -> Brooks' Behavior-Based Robotics -> Modern Embodied Intelligence.]`
+![Diagram: A timeline showing the progression from early Cybernetics (Walter's Turtles) -> Brooks' Behavior-Based Robotics -> Modern Embodied Intelligence.](/img/week1-2.png)
 
 #### 1.2 The Mind-Body Problem in AI
 
@@ -63,4 +63,4 @@ The canonical algorithm for sensor fusion is the **Kalman Filter**.
     2.  **Update:** The filter then incorporates a new measurement from a sensor (e.g., a GPS reading). It compares this measurement to its prediction and updates its state estimate, giving more weight to the value with lower uncertainty.
 *   **The Result:** Over time, the filter's estimate of the state becomes more accurate than any of the individual measurements. In robotics, extensions of the Kalman Filter (like the Extended Kalman Filter or Unscented Kalman Filter) are used to fuse data from IMUs, GPS, wheel odometry, and cameras to achieve robust and accurate localization.
 
-`[Diagram: A loop showing a "Predict" step leading to a "Predicted State," which is then combined with a "Sensor Measurement" in an "Update" step to produce a more accurate "Fused State," which then feeds back into the next "Predict" step.]`
+![Diagram: A loop showing a "Predict" step leading to a "Predicted State," which is then combined with a "Sensor Measurement" in an "Update" step to produce a more accurate "Fused State," which then feeds back into the next "Predict" step.](/img/week1-2b.png)
