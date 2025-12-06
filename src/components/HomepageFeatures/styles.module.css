@@ -5,7 +5,38 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureImg {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+/* Animation for individual feature cards */
+.features .col {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInFromBottom 1s ease-out forwards;
+}
+
+/* Stagger animation for feature cards */
+.features .col:nth-child(1) { animation-delay: 0.2s; }
+.features .col:nth-child(2) { animation-delay: 0.4s; }
+.features .col:nth-child(3) { animation-delay: 0.6s; }
+.features .col:nth-child(4) { animation-delay: 0.8s; }
+
+/* Hover effect for feature cards */
+.features .col:hover {
+  transform: translateY(-5px) scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
