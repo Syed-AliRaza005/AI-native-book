@@ -69,11 +69,16 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Textbook',
+        // },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/docs/overview',
+          label: 'Overview',
           position: 'left',
-          label: 'Textbook',
         },
         {
           href: 'https://github.com/Syed-AliRaza005/AI-native-book', 
@@ -89,8 +94,8 @@ const config: Config = {
           title: 'Textbook',
           items: [
             {
-              label: 'Introduction',
-              to: '/docs/introduction',
+              label: 'Overview',
+              to: '/docs/overview',
             },
             {
               label: 'Learning Outcomes',
@@ -107,23 +112,7 @@ const config: Config = {
             
           ],
         },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
+
         {
           title: 'Connect with Me ',
           items: [

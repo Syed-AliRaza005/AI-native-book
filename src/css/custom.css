@@ -1,3 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Utilities for Glassmorphism */
+.glass {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #60a5fa, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,7 +24,8 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #073a87; /* Strong Blue */
+  --ifm-color-primary: #073a87;
+  /* Strong Blue */
   --ifm-color-primary-dark: #1669bb;
   --ifm-color-primary-darker: #1462b0;
   --ifm-color-primary-darkest: #115191;
@@ -14,17 +33,21 @@
   --ifm-color-primary-lighter: #1e89f0;
   --ifm-color-primary-lightest: #3a9aff;
 
-  --ifm-color-secondary: #00BCD4; /* Vibrant Teal */
+  --ifm-color-secondary: #00BCD4;
+  /* Vibrant Teal */
 
-  --ifm-background-color: #F5F5F5; /* Off-white background */
-  --ifm-font-color-base: #424242; /* Dark Gray text */
+  --ifm-background-color: #F5F5F5;
+  /* Off-white background */
+  --ifm-font-color-base: #424242;
+  /* Dark Gray text */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.07);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #05678e; /* A slightly lighter blue for dark mode */
+  --ifm-color-primary: #05678e;
+  /* A slightly lighter blue for dark mode */
   --ifm-color-primary-dark: #1e88e5;
   --ifm-color-primary-darker: #1c82d9;
   --ifm-color-primary-darkest: #176eb9;
@@ -33,9 +56,12 @@
   --ifm-color-primary-lightest: #64b5f6;
   --ifm-color-text-primary: #33b4e8;
 
-  --ifm-color-secondary: #26C6DA; /* A slightly lighter teal for dark mode */
+  --ifm-color-secondary: #26C6DA;
+  /* A slightly lighter teal for dark mode */
 
-  --ifm-background-color: #212121; /* Deep Charcoal background */
-  --ifm-font-color-base: #E0E0E0; /* Light Gray text */
+  --ifm-background-color: #212121;
+  /* Deep Charcoal background */
+  --ifm-font-color-base: #E0E0E0;
+  /* Light Gray text */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
