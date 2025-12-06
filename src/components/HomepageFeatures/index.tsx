@@ -5,48 +5,60 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  img: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Part 1: Foundations',
+    img: require('@site/static/img/part1.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Learn the fundamental concepts of Physical AI, humanoid robotics, and the
+        philosophy behind building intelligent machines that interact with the
+        physical world.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Part 2: Core Tooling',
+    img: require('@site/static/img/part2.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Master the essential tools of the trade, including the Robot Operating
+        System (ROS 2) and the Gazebo simulator for creating and testing your
+        robotic systems.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Part 3: Advanced AI',
+    img: require('@site/static/img/part3.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Dive into advanced AI concepts with NVIDIA Isaac, exploring humanoid
+        development, bipedal locomotion, and human-robot interaction.
+      </>
+    ),
+  },
+  {
+    title: 'Part 4: Capstone Project',
+    img: require('@site/static/img/part4.png').default,
+    description: (
+      <>
+        Apply your knowledge to a capstone project: building a conversational
+        robot that can understand and respond to natural language commands.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, img, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={img} className={styles.featureImg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
