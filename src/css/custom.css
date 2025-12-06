@@ -65,3 +65,21 @@
   /* Light Gray text */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Force Navbar items to be white ONLY in dark mode */
+[data-theme='dark'] .navbar__brand {
+  color: white !important;
+}
+
+[data-theme='dark'] .navbar__item {
+  color: white !important;
+}
+
+[data-theme='dark'] .navbar__title {
+  color: white !important;
+}
+
+/* Optional: Make the logo white if it's an SVG/image that can be inverted */
+[data-theme='dark'] .navbar__logo {
+  filter: brightness(0) invert(1);
+}

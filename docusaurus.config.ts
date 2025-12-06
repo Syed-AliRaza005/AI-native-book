@@ -1,12 +1,12 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
   title: 'Physical AI & Humanoid Robotics',
-  tagline: 'A Textbook by Syed Ali Raza', 
+  tagline: 'A Textbook by Syed Ali Raza',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://Syed-AliRaza005.github.io', 
+  url: 'https://Syed-AliRaza005.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -24,7 +24,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Syed-AliRaza005',
   projectName: 'AI-native-book', // Usually your repo name.
-  trailingSlash: false,  
+  trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -47,7 +47,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/Syed-AliRaza005/AI-native-book'
-                    },
+        },
         blog: false, // disabled blog
         theme: {
           customCss: './src/css/custom.css',
@@ -65,8 +65,9 @@ const config: Config = {
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
       logo: {
-        alt: 'Syed Ali Raza Logo', 
+        alt: 'Syed Ali Raza Logo',
         src: 'img/logo.svg',
+
       },
       items: [
         // {
@@ -81,7 +82,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/Syed-AliRaza005/AI-native-book', 
+          href: 'https://github.com/Syed-AliRaza005/AI-native-book',
           label: 'GitHub',
           position: 'right',
         },
@@ -109,7 +110,7 @@ const config: Config = {
               label: 'Assessments',
               to: '/docs/assessments/introduction',
             },
-            
+
           ],
         },
 
@@ -118,24 +119,24 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/Syed-AliRaza005/AI-native-book', 
+              href: 'https://github.com/Syed-AliRaza005/AI-native-book',
             },
             {
               label: 'Linkedin',
-              href: 'https://www.linkedin.com/in/syed-ali-raza-hassan-6166a02ba/', 
+              href: 'https://www.linkedin.com/in/syed-ali-raza-hassan-6166a02ba/',
             },
             {
               label: 'Portfolio',
-              href: 'https://portfolio-sarh.vercel.app/', 
+              href: 'https://portfolio-sarh.vercel.app/',
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/_itz_ali_005/', 
+              href: 'https://www.instagram.com/_itz_ali_005/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Syed Ali Raza. Built with Docusaurus.`, 
+      copyright: `Copyright © ${new Date().getFullYear()} Syed Ali Raza. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
