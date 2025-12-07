@@ -18,12 +18,11 @@ This book is ideal for:
 
 The book is meticulously structured into six progressive modules, each designed to build your expertise from core principles to advanced applications:
 
-*   **Module 0: Introduction to Physical AI & Robotics:** Sets the stage with the vision of embodied AI, historical context, foundational concepts, sensor modalities, and hardware essentials.
+*  Introduction to Physical AI & Robotics:** Sets the stage with the vision of embodied AI, historical context, foundational concepts, sensor modalities, and hardware essentials.
 *   **Module 1: The Robotic Nervous System: ROS 2 Fundamentals:** Masters the Robot Operating System 2, covering architecture, communication, packages, launch files, data management, and `ros2_control`.
 *   **Module 2: Building Digital Twins: Simulation Environments:** Explores Gazebo and game engines for high-fidelity simulation, including URDF/XACRO, plugins, and advanced modeling.
 *   **Module 3: The AI-Robot Brain: Advanced Perception & Learning:** Dives into NVIDIA Isaac Platform, Omniverse, USD, Isaac Sim for synthetic data, Isaac ROS, Reinforcement Learning, sim-to-real, and deep learning for perception.
-*   **Module 4: Humanoid Robotics: Control, Interaction & Autonomy:** Addresses humanoid-specific challenges: kinematics, dynamics, whole-body control, bipedal locomotion, manipulation, grasping, and human-robot interaction design.
-*   **Module 5: Conversational Autonomy: Capstone Integration:** Culminates with LLMs as cognitive engines, speech recognition, NLU, multi-modal interaction (VLA), autonomous humanoid integration, and ethical considerations.
+*   **Module 4: Vision-Language-Action (VLA)** Addresses humanoid-specific challenges: kinematics, dynamics, whole-body control, bipedal locomotion, manipulation, grasping, and human-robot interaction design. Culminates with LLMs as cognitive engines, speech recognition, NLU, multi-modal interaction (VLA), autonomous humanoid integration, and ethical considerations.
 
 ### What You Will Learn
 
