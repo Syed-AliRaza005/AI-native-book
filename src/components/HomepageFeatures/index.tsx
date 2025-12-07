@@ -10,20 +10,8 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Module 0: Introduction to Physical AI & Robotics',
-    img: require('@site/static/img/part1.png').default,
-    description: (
-      <>
-        Learn the fundamental concepts of Physical AI, humanoid robotics, and the
-        philosophy behind building intelligent machines that interact with the
-        physical world.
-      </>
-    ),
-    link: '/docs/introduction/vision-of-embodied-ai',
-  },
-  {
     title: 'Module 1: The Robotic Nervous System (ROS 2)',
-    img: require('@site/static/img/part2.png').default,
+    img: require('@site/static/img/part1.png').default,
     description: (
       <>
         Master the essential tools of the trade, including the Robot Operating
@@ -35,7 +23,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Module 2: The Digital Twin (Gazebo & Unity)',
-    img: require('@site/static/img/part3.png').default,
+    img: require('@site/static/img/part2.png').default,
     description: (
       <>
         Dive into advanced AI concepts with NVIDIA Isaac, exploring humanoid
@@ -46,7 +34,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Module 3: The AI-Robot Brain (NVIDIA Isaac™)',
-    img: require('@site/static/img/part4.png').default,
+    img: require('@site/static/img/part3.png').default,
     description: (
       <>
         Apply your knowledge to a capstone project: building a conversational
@@ -55,6 +43,16 @@ const FeatureList: FeatureItem[] = [
     ),
     link: '/docs/module3-ai/omniverse-usd-isaac-sim',
   },
+    {
+    title: 'Module 4: Vision-Language-Action (VLA)',
+    img: require('@site/static/img/part4.png').default,
+    description: (
+      <>
+       Culminates with LLMs as cognitive engines, speech recognition, NLU, multi-modal interaction (VLA), autonomous humanoid integration, and ethical considerations.
+      </>
+    ),
+    link: '/docs/module4-vla/humanoid-kinematics-dynamics',
+  }
 ];
 
 function Feature({ title, img, description, link }: FeatureItem) {
